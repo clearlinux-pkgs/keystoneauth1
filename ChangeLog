@@ -1,6 +1,34 @@
 CHANGES
 =======
 
+2.2.0
+-----
+
+* add release notes for ksa 2.2.0
+* Updated from global requirements
+* Replace assertEqual(None, *) with assertIsNone in tests
+* Updated from global requirements
+* Change LOG.warn to LOG.warning
+* Wrong usage of "a"
+* On Windows and OSX, the 'socket' python module does not contain the attributes TCP_KEEPCNT or TCP_KEEPINTVL, causing services consuming the library to malfunction
+* Updated from global requirements
+* Add betamax to test-requirements.txt
+* Add some documentation about migrating from ksc
+* Docstring corrections
+* Iterate over copy of session.adapters keys in Python2/3
+* Provide a RFC 7231 compliant user agent string
+* Updated from global requirements
+* Deprecated tox -downloadcache option removed
+* small fix to missing parameters in documentation
+* Remove confusing documentation
+* Update coverage to keystoneauth1
+* Updated from global requirements
+* Cleanups to K2K plugin
+* Get versioned url for K2K auth
+* Extract SAML fixtures into templates
+* Add BetaMax Fixture
+* Updated from global requirements
+
 2.1.0
 -----
 
@@ -13,6 +41,7 @@ CHANGES
 2.0.0
 -----
 
+* Extract the rescoping logic from federation and K2K
 * Add release notes for keystoneauth
 * Updated from global requirements
 * Add argparse registration from Adapter objects
