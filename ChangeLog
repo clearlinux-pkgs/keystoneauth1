@@ -1,6 +1,23 @@
 CHANGES
 =======
 
+2.3.0
+-----
+
+* Cleanup test-requirements.txt
+* Updated from global requirements
+* Allow parameter expansion in endpoint_override
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* Use positional library instead of our own copy
+* Remove argparse from requirements
+* HTTPError should contain 'retry_after' parameter
+* Updated from global requirements
+* Remove keyring as a test-requiremnet
+* Mark password/secret options as secret
+* Replace deprecated library function os.popen() with subprocess
+
 2.2.0
 -----
 
