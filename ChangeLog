@@ -1,11 +1,31 @@
 CHANGES
 =======
 
-2.4.0
+2.5.0
 -----
 
+* fix OrderedDict mutated during iteration
+* Fix for PEP8 violation - D202 (No blank lines allowed after function docstring.)
+* Examples for migration from keystoneclient
+* Renamed endpoint to interface in docstring
+* Keystoneauth Authentication Plugin doc typo
+* Allow seeing full token response when debug enabled
+* Update reno for stable/mitaka
+* Examples for kerberos and saml2 plugins
+* Adding authentication compatibility for OpenStackClient
+* Swap the order of username deprecation
+* Fix exported symbol in identity.v3
+* Editorial nits for docs
+* Improve usability of docs
+* Add links to federation plugins
+* Remove unavailable parameter
+* Generate FederationBaseAuth constructor parameters
+* Update test run instructions
+* Fix typos and improve formatting in migrating.rst
 * Updated from global requirements
-* Update .gitreview for stable/mitaka
+* Updated from global requirements
+* Cleanup docstrings
+* Fix docstring in identity.v3.oidc module
 
 2.3.0
 -----
