@@ -4,7 +4,7 @@
 #
 Name     : keystoneauth1
 Version  : 2.6.0
-Release  : 10
+Release  : 11
 URL      : http://tarballs.openstack.org/keystoneauth/keystoneauth1-2.6.0.tar.gz
 Source0  : http://tarballs.openstack.org/keystoneauth/keystoneauth1-2.6.0.tar.gz
 Summary  : Authentication Library for OpenStack Identity
