@@ -1,9 +1,36 @@
 CHANGES
 =======
 
+2.7.0
+-----
+
+* Updated from global requirements
+* Updated from global requirements
+* docstring: fix typo
+* Updated from global requirements
+* Add oauth plugin to keystoneauth
+* Expose is_admin_project in AccessInfo
+* Updated from global requirements
+* Expose allow parameters for URL discovery
+* Updated from global requirements
+* Refactor variables for fixture and service
+* Enable bandit
+* Lazy import oslo_config as required
+* Add 303 as redirect code for k2k plugin
+* Updated from global requirements
+* Fix H405, D105, D200, and D203 PEP257
+* Updated from global requirements
+* Fixing D204, D205, D208, and D211 pep8
+* Fixing D301 docstring
+* Removing tox ignore D400
+* Fix documentation example again
+* Include query string in request logging
+* Removing tox ignore D401 and make keystoneauth compliant
+
 2.6.0
 -----
 
+* Documentation example fix
 * Allow to send different recorders to betamax
 * Fix doc build if git is absent
 * Updated from global requirements
