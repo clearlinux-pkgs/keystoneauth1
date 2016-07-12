@@ -1,6 +1,50 @@
 CHANGES
 =======
 
+2.9.0
+-----
+
+* Updated from global requirements
+* move release note to correct directory
+* oidc: fix OpenID Connect scope option
+* oidc: add tests for plugin loader
+* Don't mock the session.request function
+* Updated from global requirements
+* oidc: refactor unit tests
+* Updated from global requirements
+* Fix code example for OAuth1 authentication
+* Add entrypoint for Federated Kerberos
+* Fix kerberos available property
+* Document named kerberos plugin
+* Support TOTP auth plugin
+* Make the kerberos plugin loadable
+* Add available flag to plugin loaders
+* Updated from global requirements
+* PEP257: Ignore D203 because it was deprecated
+* Updated from global requirements
+* Apply a heuristic for product name if a user_agent is not provided
+
+2.8.0
+-----
+
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* Let Oidc* auth plugins accept scope parameters as kwargs
+* Updated from global requirements
+* Update keystoneauth fixture to support v3
+* Check that all defined entry points can be loaded
+* Use betamax hooks to mask fixture results
+* oidc: fix typo on class name
+* oidc: fix option definition
+* oidc: add OidcAccessToken class to authenticate reusing an access token
+* oidc: fix typo in docstring
+* oidc: DRY when obtaining an access token
+* oidc: DRY when obtaining a keystone token
+* oidc: Remove unused parameters in _OidcBase
+* Add is_domain to keystoneauth token
+
 2.7.0
 -----
 

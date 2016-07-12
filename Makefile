@@ -1,5 +1,5 @@
 PKG_NAME := keystoneauth1
-URL := http://tarballs.openstack.org/keystoneauth/keystoneauth1-2.7.0.tar.gz
+URL := http://tarballs.openstack.org/keystoneauth/keystoneauth1-2.9.0.tar.gz
 ARCHIVES :=
 
 include ../common/Makefile.common
