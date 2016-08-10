@@ -1,6 +1,46 @@
 CHANGES
 =======
 
+2.11.0
+------
+
+* Add tests for YamlJsonSerializer
+* Updated from global requirements
+* Don't include openstack/common in flake8 exclude list
+* Improve authentication plugins documentation
+* Add missing class name to tuple of public objects
+* Correctly report available for ADFS plugin
+* Updated from global requirements
+* Fix arguments to _auth_required()
+* Fix the doc error in "using-session"
+* Use assertEqual() instead of assertDictEqual()
+
+2.10.0
+------
+
+* Lazy load oauthlib for plugin loading
+* oidc: add missing 'OidcAccessToken' to __all__
+* oidc: implement client_credentials grant type
+* Fix ECP doc link in Saml2 Password class doc
+* Updated from global requirements
+* Fix link for "extras dependencies" in extras doc
+* Add pretty serializer for betamax fixture
+* Update hacking to global-requirements value
+* Use SAML2 requests plugin
+* Updated from global requirements
+* oidc: move the get_unscoped_auth_ref into the base class
+* oidc: deprecate grant_type argument
+* oidc: add discovery document support
+* Add additional_headers to session and adapter
+* Add Python 3.5 classifier and venv
+* remove unused LOG
+* Updated from global requirements
+* Updated from global requirements
+* Add prompt parameter to Opt
+* Auth plugin for X.509 tokenless authentication
+* oidc: fix OpenID scope management
+* Add create_plugin to loader
+
 2.9.0
 -----
 
