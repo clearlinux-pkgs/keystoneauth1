@@ -1,6 +1,55 @@
 CHANGES
 =======
 
+2.14.0
+------
+
+* be more explicit about connection errors
+* Fix a typo in opts.py
+* Fix a typo in base.py
+* Allow specifying client and service info to user_agent
+* Enable release notes translation
+
+2.13.0
+------
+
+* Updated from global requirements
+* Implement caching for the generic plugins
+* Updated from global requirements
+* Updated from global requirements
+* Use mockpatch fixtures from fixtures
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* Fix parameters for Kerberos Auth Plugin
+* Test that v3fedkerb plugin loads
+* Updated from global requirements
+* doc: remove unused import
+* Raise NotImplementedError instead of NotImplemented
+* standardize release note page ordering
+* Update reno for stable/newton
+
+2.12.1
+------
+
+* get_endpoint should return None when no version found
+
+2.12.0
+------
+
+* Disables TCP_KEEPCNT when using Windows Subsystem for Linux
+* Updated from global requirements
+* Allow identity plugins to discover relative version urls
+
+2.11.1
+------
+
+* add status code 308 to _REDIRECT_STATUSES
+* User-agent header shouldn't start with a space
+* Add tests for user-agent with odd sys.argv
+* Update the home-page in setup.cfg
+
 2.11.0
 ------
 
