@@ -6,7 +6,7 @@
 #
 Name     : keystoneauth1
 Version  : 2.14.0
-Release  : 22
+Release  : 23
 URL      : http://tarballs.openstack.org/keystoneauth/keystoneauth1-2.14.0.tar.gz
 Source0  : http://tarballs.openstack.org/keystoneauth/keystoneauth1-2.14.0.tar.gz
 Source99 : http://tarballs.openstack.org/keystoneauth/keystoneauth1-2.14.0.tar.gz.asc
@@ -14,16 +14,27 @@ Summary  : Authentication Library for OpenStack Identity
 Group    : Development/Tools
 License  : Apache-2.0
 Requires: keystoneauth1-python
+Requires: fixtures
+Requires: iso8601
+Requires: lxml
+Requires: oauthlib
+Requires: pbr
+Requires: positional
+Requires: python-mock
+Requires: requests
+Requires: six
+Requires: stevedore
 BuildRequires : Sphinx-python
 BuildRequires : WebOb-python
+BuildRequires : configparser-python
 BuildRequires : coverage-python
 BuildRequires : discover-python
 BuildRequires : extras
 BuildRequires : extras-python
 BuildRequires : hacking
-BuildRequires : imagesize-python
 BuildRequires : iso8601-python
 BuildRequires : keyring-python
+BuildRequires : markupsafe-python
 BuildRequires : mox3-python
 BuildRequires : oauthlib-python
 BuildRequires : oslo.config
@@ -64,11 +75,6 @@ replays it as part of the test suite.
 %package python
 Summary: python components for the keystoneauth1 package.
 Group: Default
-Requires: iso8601-python
-Requires: oauthlib-python
-Requires: requests-python
-Requires: six-python
-Requires: stevedore
 
 %description python
 python components for the keystoneauth1 package.
@@ -79,12 +85,12 @@ python components for the keystoneauth1 package.
 
 %build
 export LANG=C
-export SOURCE_DATE_EPOCH=1484551489
+export SOURCE_DATE_EPOCH=1487881188
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1484551489
+export SOURCE_DATE_EPOCH=1487881188
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
