@@ -1,12 +1,64 @@
 CHANGES
 =======
 
+2.18.0
+------
+
+* Correctly Omit Response Body in Debug Mode
+* Add test for header in Saml2 plugin
+* Use comma as separator in ECP Accept HTTP header
+* Replace yaml.load() with yaml.safe_load()
+
+2.17.0
+------
+
+* Add a full listing of all auth plugins and there options
+* Only log application/json in session to start
+* X-Serivce-Token should be hashed in the log
+* Add __ne__ built-in function
+* Log request-id for each api call
+* Remove references to Python 3.4
+* Prevent MemoryError when logging response bodies
+* Updated from global requirements
+* Removes unnecessary utf-8 encoding
+* Add Constraints support
+* Remove discover from test-requirements
+* Replace six.iteritems() with .items()
+* Don't issue deprecation warning when nesting adapters
+* Updated from global requirements
+
+2.16.0
+------
+
+* Show team and repo badges on README
+* Drop MANIFEST.in - it's not needed by pbr
+* Add reauthenticate to generic plugins
+* Using assertIsNotNone() instead of assertNotEqual(None)
+* Fix a typo in base.py
+* Correct betamax fixture for more strict IDNA
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* mark a few oidc parameters as required
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+
+2.15.0
+------
+
+* Allow setting client_name, client_version on adapter
+* Show deprecation warning and limit features for KSC session
+* Don't use private testtools.test module
+* Prevent changing content type in request
+
 2.14.0
 ------
 
 * be more explicit about connection errors
 * Fix a typo in opts.py
 * Fix a typo in base.py
+* Add a service token wrapper
 * Allow specifying client and service info to user_agent
 * Enable release notes translation
 
