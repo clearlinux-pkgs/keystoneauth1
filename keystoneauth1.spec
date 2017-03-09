@@ -4,7 +4,7 @@
 #
 Name     : keystoneauth1
 Version  : 2.18.0
-Release  : 24
+Release  : 25
 URL      : http://pypi.debian.net/keystoneauth1/keystoneauth1-2.18.0.tar.gz
 Source0  : http://pypi.debian.net/keystoneauth1/keystoneauth1-2.18.0.tar.gz
 Summary  : Authentication Library for OpenStack Identity
@@ -31,7 +31,6 @@ BuildRequires : extras-python
 BuildRequires : hacking
 BuildRequires : iso8601-python
 BuildRequires : keyring-python
-BuildRequires : markupsafe-python
 BuildRequires : mox3-python
 BuildRequires : oauthlib-python
 BuildRequires : oslo.config
@@ -82,12 +81,12 @@ python components for the keystoneauth1 package.
 
 %build
 export LANG=C
-export SOURCE_DATE_EPOCH=1487960837
+export SOURCE_DATE_EPOCH=1489028043
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1487960837
+export SOURCE_DATE_EPOCH=1489028043
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
