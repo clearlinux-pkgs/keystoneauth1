@@ -4,7 +4,7 @@
 #
 Name     : keystoneauth1
 Version  : 2.18.0
-Release  : 25
+Release  : 26
 URL      : http://pypi.debian.net/keystoneauth1/keystoneauth1-2.18.0.tar.gz
 Source0  : http://pypi.debian.net/keystoneauth1/keystoneauth1-2.18.0.tar.gz
 Summary  : Authentication Library for OpenStack Identity
@@ -21,46 +21,11 @@ Requires: python-mock
 Requires: requests
 Requires: six
 Requires: stevedore
-BuildRequires : Sphinx-python
-BuildRequires : WebOb-python
-BuildRequires : configparser-python
-BuildRequires : coverage-python
-BuildRequires : discover-python
-BuildRequires : extras
-BuildRequires : extras-python
-BuildRequires : hacking
-BuildRequires : iso8601-python
-BuildRequires : keyring-python
-BuildRequires : mox3-python
-BuildRequires : oauthlib-python
-BuildRequires : oslo.config
-BuildRequires : oslosphinx-python
-BuildRequires : oslotest-python
 BuildRequires : pbr
 BuildRequires : pip
-BuildRequires : pluggy
-BuildRequires : py-python
-BuildRequires : pycrypto-python
-BuildRequires : pytest
 BuildRequires : python-dev
-BuildRequires : python-mimeparse-python
-BuildRequires : python-mock-python
 BuildRequires : python3-dev
-BuildRequires : requests-mock-python
-BuildRequires : requests-python
 BuildRequires : setuptools
-BuildRequires : six
-BuildRequires : six-python
-BuildRequires : stevedore
-BuildRequires : tempest-lib-python
-BuildRequires : testrepository-python
-BuildRequires : testresources
-BuildRequires : testtools
-BuildRequires : testtools-python
-BuildRequires : tox
-BuildRequires : traceback2-python
-BuildRequires : unittest2-python
-BuildRequires : virtualenv
 
 %description
 This directory holds the betamax test cassettes that are pre-generated
@@ -81,12 +46,12 @@ python components for the keystoneauth1 package.
 
 %build
 export LANG=C
-export SOURCE_DATE_EPOCH=1489028043
+export SOURCE_DATE_EPOCH=1489271665
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1489028043
+export SOURCE_DATE_EPOCH=1489271665
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
