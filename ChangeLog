@@ -1,6 +1,25 @@
 CHANGES
 =======
 
+2.19.0
+------
+
+* Remove unused test requirement pycrypto
+* Updated from global requirements
+* Prevent JSON decode errors in the pre-record hook
+* Allow users to specify request matchers in Betamax
+* Remove pbr warnerrors in favor of sphinx check
+* Allow users to specify a serializer easily
+* Allow new cassettes to be recorded via fixture
+* Update test requirement
+* Add an allow_version_hack flag to session and identity plugins
+* Include the auth_url in the discovery failure message
+* Updated from global requirements
+* Fixed multiple target Auth warning in docstring
+* Use https for *.openstack.org references
+* Fix ClientException message property not set properly
+* Update reno for stable/ocata
+
 2.18.0
 ------
 
