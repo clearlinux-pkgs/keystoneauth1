@@ -4,7 +4,7 @@
 #
 Name     : keystoneauth1
 Version  : 2.19.0
-Release  : 27
+Release  : 28
 URL      : http://pypi.debian.net/keystoneauth1/keystoneauth1-2.19.0.tar.gz
 Source0  : http://pypi.debian.net/keystoneauth1/keystoneauth1-2.19.0.tar.gz
 Summary  : Authentication Library for OpenStack Identity
@@ -46,12 +46,12 @@ python components for the keystoneauth1 package.
 
 %build
 export LANG=C
-export SOURCE_DATE_EPOCH=1489518685
+export SOURCE_DATE_EPOCH=1489774413
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1489518685
+export SOURCE_DATE_EPOCH=1489774413
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
@@ -61,4 +61,5 @@ python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
 
 %files python
 %defattr(-,root,root,-)
-/usr/lib/python*/*
+/usr/lib/python2*/*
+/usr/lib/python3*/*
