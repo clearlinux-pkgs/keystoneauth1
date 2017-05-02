@@ -4,7 +4,7 @@
 #
 Name     : keystoneauth1
 Version  : 2.19.0
-Release  : 29
+Release  : 30
 URL      : https://pypi.debian.net/keystoneauth1/keystoneauth1-2.19.0.tar.gz
 Source0  : https://pypi.debian.net/keystoneauth1/keystoneauth1-2.19.0.tar.gz
 Summary  : Authentication Library for OpenStack Identity
