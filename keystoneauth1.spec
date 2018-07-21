@@ -4,12 +4,14 @@
 #
 Name     : keystoneauth1
 Version  : 2.20.0
-Release  : 32
+Release  : 33
 URL      : https://pypi.debian.net/keystoneauth1/keystoneauth1-2.20.0.tar.gz
 Source0  : https://pypi.debian.net/keystoneauth1/keystoneauth1-2.20.0.tar.gz
 Summary  : Authentication Library for OpenStack Identity
 Group    : Development/Tools
 License  : Apache-2.0
+Requires: keystoneauth1-python3
+Requires: keystoneauth1-license
 Requires: keystoneauth1-python
 Requires: fixtures
 Requires: iso8601
@@ -21,24 +23,40 @@ Requires: python-mock
 Requires: requests
 Requires: six
 Requires: stevedore
+BuildRequires : buildreq-distutils3
 BuildRequires : pbr
 BuildRequires : pip
-BuildRequires : python-dev
 BuildRequires : python3-dev
 BuildRequires : setuptools
 
 %description
-This directory holds the betamax test cassettes that are pre-generated
-for unit testing. This can be removed in the future with a functional
-test that stands up a full devstack, records a cassette and then
-replays it as part of the test suite.
+Team and repository tags
+        ========================
+
+%package license
+Summary: license components for the keystoneauth1 package.
+Group: Default
+
+%description license
+license components for the keystoneauth1 package.
+
 
 %package python
 Summary: python components for the keystoneauth1 package.
 Group: Default
+Requires: keystoneauth1-python3
 
 %description python
 python components for the keystoneauth1 package.
+
+
+%package python3
+Summary: python3 components for the keystoneauth1 package.
+Group: Default
+Requires: python3-core
+
+%description python3
+python3 components for the keystoneauth1 package.
 
 
 %prep
@@ -49,15 +67,14 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1494268453
-python2 setup.py build -b py2
+export SOURCE_DATE_EPOCH=1532210511
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1494268453
 rm -rf %{buildroot}
-python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
-python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
+mkdir -p %{buildroot}/usr/share/doc/keystoneauth1
+cp LICENSE %{buildroot}/usr/share/doc/keystoneauth1/LICENSE
+python3 -tt setup.py build -b py3 install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
 echo ----[ mark ]----
@@ -65,7 +82,13 @@ echo ----[ mark ]----
 %files
 %defattr(-,root,root,-)
 
+%files license
+%defattr(-,root,root,-)
+/usr/share/doc/keystoneauth1/LICENSE
+
 %files python
 %defattr(-,root,root,-)
-/usr/lib/python2*/*
+
+%files python3
+%defattr(-,root,root,-)
 /usr/lib/python3*/*
