@@ -4,9 +4,9 @@
 #
 Name     : keystoneauth1
 Version  : 3.10.0
-Release  : 34
-URL      : https://files.pythonhosted.org/packages/b6/90/0249c5cbe72f486fdb8c8387d5807ea97519237edb1b0f58a7b57a41fb3d/keystoneauth1-3.10.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/b6/90/0249c5cbe72f486fdb8c8387d5807ea97519237edb1b0f58a7b57a41fb3d/keystoneauth1-3.10.0.tar.gz
+Release  : 35
+URL      : https://pypi.debian.net/keystoneauth1/keystoneauth1-3.10.0.tar.gz
+Source0  : https://pypi.debian.net/keystoneauth1/keystoneauth1-3.10.0.tar.gz
 Summary  : Authentication Library for OpenStack Identity
 Group    : Development/Tools
 License  : Apache-2.0
@@ -80,7 +80,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1532243475
+export SOURCE_DATE_EPOCH=1532294047
 python3 setup.py build -b py3
 
 %install
