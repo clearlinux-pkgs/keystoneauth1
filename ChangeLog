@@ -1,6 +1,209 @@
 CHANGES
 =======
 
+3.10.0
+------
+
+* Add netloc and version check for version discovery
+
+3.9.0
+-----
+
+* Add minimum version for requirements
+* raise\_exc default in Adapter
+
+3.8.0
+-----
+
+* fix tox python3 overrides
+* Add optional support for retrying certain HTTP codes
+
+3.7.0
+-----
+
+* Add oslo.config option for split-loggers
+* Collect timing information for API calls
+* Return the endpoint\_override from EndpointData
+* Expose version\_between as a real function
+
+3.6.2
+-----
+
+* Fix logging of encoded headers
+
+3.6.1
+-----
+
+* Fix interface argument to get\_all\_version\_data
+
+3.6.0
+-----
+
+* Reference class variable in Status
+* Use Status variables in tests
+* Infer version from old versioned service type aliases
+* Turn normalize\_status into a class
+* Make VersionData class
+* Add methods to get all of the version data
+* Implement service\_type alias lookups
+* Trivial: Update pypi url to new url
+* Allow tuples and sets in interface list
+
+3.5.0
+-----
+
+* add lower-constraints job
+* Expose version status in EndpointData
+* Fix W503 line-break-before-binary-operator
+* fix a typo in session.py
+* Remove tox\_install.sh and align with constraints consumption
+* Updated from global requirements
+* Be more helpful when version discovery fails
+* Updated from global requirements
+* Update links in README
+* Add pep8 import order validation
+* Override support message in AuthorizationFailure  class
+* Fix a spelling error
+* Zuul: Remove project name
+* Add some comments explaining split\_loggers flag logic
+* Remove PYTHONHASHSEED setting
+* Split request logging into four different loggers
+* Update reno for stable/queens
+* Updated from global requirements
+
+3.4.0
+-----
+
+* Add documentation and release note for app creds
+* Add support for application credentials
+* Updated from global requirements
+* Implement system scope
+* Use stestr in tox.ini
+* Updated from global requirements
+* Fix masked variable name
+* Shift additional\_user\_agent in the stack
+* Updated from global requirements
+* Fix docs builds
+* Add osc, shade and sdk tips jobs
+* Mark SAML loader properties as required
+
+3.3.0
+-----
+
+* Remove setting of version/release from releasenotes
+* Updated from global requirements
+* Updated from global requirements
+* Make none auth usable in CLI
+* Add EndpointData.\_\_str\_\_ for debugging
+* Correct docs usage of keystoneauth1 session
+* Updated from global requirements
+* Migrate to stestr
+* Add version discovery support to BaseAuthPlugin
+* Recommend unversioned for endpoint-override
+* Nits in using-sessions.rst
+* Extract iterables for test\_keystone\_version\_data
+* Sanely order assertion args in test\_discovery
+* Add tests for mutually exclusive [min|max]version
+* Make discover.\_version\_between more consistent
+* Add loading mock fixtures
+* Updated from global requirements
+
+3.2.0
+-----
+
+* Set self.allow to a dict if None is passed
+* Fix docstring typo
+* Update discovery url normalization with catalog info
+* Add method to get the api major version
+* Don't use mutable defaults in allow arguments
+* Protect against missing interface attribute
+* Adapter.get\_conf\_options(deprecated\_opts)
+* Allow discovery URLs to have trailing slashes
+* Remove use of positional decorator
+* Fix exception message in adapter loading
+* Update reno for stable/pike
+* Updated from global requirements
+* Parameter to tune mutual authentication in kerberos
+* Add release note for 'none' auth plugin
+* Enable some off-by-default checks
+
+3.1.0
+-----
+
+* get\_conf\_options can exclude deprecated opts
+* Record the discovered major api version
+* Add tests to specifically test trailing slash behavior
+
+3.0.1
+-----
+
+* Ensure constructed urls have trailing '/'s
+* Handle pathless URLs
+
+3.0.0
+-----
+
+* Add note to requirements.txt
+* Fixed minor review comments and updated docs
+* Make discover.version\_between private
+* Discourage 'version' and accept 'M.latest'
+* Add ability to specify a microversion in a request
+* Remove deprecated\_since for interface and fix text
+* Enable sphinx todo extension
+* Add support for next\_min\_version and not\_before
+* Remove kwargs from adapter.get\_endpoint\_data
+* Expose valid\_interfaces as a ListOpt for config files
+* Add min\_version and max\_version to adapter constructors
+* Minor cleanup
+* Add paragraph clarifying major and micro versions
+* Update docs and add a release note
+* Update URLs in documents according to document migration
+* Make Discover.version\_data accept null max\_version
+* Miscellaneous cleanup in discover.py
+* normalize\_version\_number([1]) => (1, 0) and docs
+* Fix \_run\_discovery caching
+* Nix EndpointData.get\_versioned\_data(authenticated)
+* Expand some discover.py docstrings
+* Change locations of docs for intersphinx
+* Clean up a few review nits
+* Switch from oslosphinx to openstackdocstheme
+* Ensure we discover only when we should
+* Refactor volume mock urls in identity\_common tests
+* Support a list of interface values
+* Optimize matching version no microversion needed
+* Plumb endpoint\_override through get\_endpoint\_data
+* Expose getting EndpointData on adapter and session
+* Add support for version ranges
+* Support explicitly requesting the 'latest' version
+* Add flags to turn discovery on and off
+* Updated from global requirements
+* Add url manipulation and microversion collection
+* Move version discovery logic to keystoneauth1.discover
+* Rework discovery cache
+* Using assertFalse(A) instead of assertEqual(False, A)
+* Updated from global requirements
+* Updated from global requirements
+* Optimize the link address
+* Pass kwargs to the plugin getter
+* Rework EndpointData construction to normalize catalog first
+* Add returning EndpointData objects from discovery
+* Port the missing version data discovery tests from ksc
+* Add 'none' identity plugin
+
+2.21.0
+------
+
+* Fix html\_last\_updated\_fmt for Python3
+* Replace assertTrue(isinstance()) with assertIsInstance()
+* Updated from global requirements
+* Add global\_request\_id param to Adapter constructor
+* Trivial fix typo in document
+* Updated from global requirements
+* Allow setting EndpointReference in ADFSPassword
+* Updated from global requirements
+* Add ADFSPassword to keystoneauth1 entry points
+* Fix V3ADFSPassword retrieval of scoped token
+
 2.20.0
 ------
 
