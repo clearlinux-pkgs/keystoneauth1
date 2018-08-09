@@ -4,7 +4,7 @@
 #
 Name     : keystoneauth1
 Version  : 3.10.0
-Release  : 35
+Release  : 36
 URL      : https://pypi.debian.net/keystoneauth1/keystoneauth1-3.10.0.tar.gz
 Source0  : https://pypi.debian.net/keystoneauth1/keystoneauth1-3.10.0.tar.gz
 Summary  : Authentication Library for OpenStack Identity
@@ -19,10 +19,13 @@ Requires: bandit
 Requires: coverage
 Requires: fixtures
 Requires: flake8-docstrings
+Requires: flake8-import-order
 Requires: hacking
 Requires: iso8601
 Requires: lxml
 Requires: oauthlib
+Requires: openstackdocstheme
+Requires: os-service-types
 Requires: os-testr
 Requires: oslo.config
 Requires: oslo.utils
@@ -33,14 +36,12 @@ Requires: reno
 Requires: requests
 Requires: requests-mock
 Requires: six
+Requires: stestr
 Requires: stevedore
 Requires: testresources
 Requires: testtools
 BuildRequires : buildreq-distutils3
 BuildRequires : pbr
-BuildRequires : pip
-BuildRequires : python3-dev
-BuildRequires : setuptools
 
 %description
 Team and repository tags
@@ -80,7 +81,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1532294047
+export SOURCE_DATE_EPOCH=1533789536
 python3 setup.py build -b py3
 
 %install
