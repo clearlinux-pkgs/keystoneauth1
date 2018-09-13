@@ -1,6 +1,22 @@
 CHANGES
 =======
 
+3.11.0
+------
+
+* Protect against endpoint\_data not existing
+* Add support for ironic single-version responses
+* Remove os-testr from requirements
+* add lib-forward-testing-python3 test job
+* add python 3.6 unit test job
+* switch documentation job to new PTI
+* import zuul job settings from project-config
+* Add Keystone2Keystone example
+* Change log hashing to SHA256
+* add release notes to readme.rst
+* Update reno for stable/rocky
+* Add ability to filter version data by service-type
+
 3.10.0
 ------
 
