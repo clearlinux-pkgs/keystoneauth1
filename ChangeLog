@@ -1,6 +1,14 @@
 CHANGES
 =======
 
+3.11.1
+------
+
+* Make new-style single endpoint version discovery actually work for ironic
+* Update sphinx extension logging
+* Reformat Adapter docstring
+* Cache root urls with and without trailing slashes
+
 3.11.0
 ------
 
