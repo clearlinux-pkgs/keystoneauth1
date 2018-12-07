@@ -1,6 +1,15 @@
 CHANGES
 =======
 
+3.11.2
+------
+
+* Fix version discovery for clouds with int project\_ids
+* Replacing the HTTP protocal with HTTPS in using-sessions.rst
+* Add py36 tox environment
+* fix wrong spelling of "unnecessary"
+* Add missing release note for ironic discovery fix
+
 3.11.1
 ------
 
