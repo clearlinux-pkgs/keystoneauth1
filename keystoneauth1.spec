@@ -4,7 +4,7 @@
 #
 Name     : keystoneauth1
 Version  : 3.11.2
-Release  : 41
+Release  : 42
 URL      : https://files.pythonhosted.org/packages/f8/db/4ef4ce85a3136d193303f519d42af24f230b13d4e42ea449ceb274f8cd08/keystoneauth1-3.11.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/f8/db/4ef4ce85a3136d193303f519d42af24f230b13d4e42ea449ceb274f8cd08/keystoneauth1-3.11.2.tar.gz
 Summary  : Authentication Library for OpenStack Identity
@@ -13,30 +13,25 @@ License  : Apache-2.0
 Requires: keystoneauth1-license = %{version}-%{release}
 Requires: keystoneauth1-python = %{version}-%{release}
 Requires: keystoneauth1-python3 = %{version}-%{release}
-Requires: Sphinx
 Requires: fixtures
-Requires: hacking
 Requires: iso8601
 Requires: lxml
 Requires: oauthlib
-Requires: openstackdocstheme
 Requires: os-service-types
-Requires: oslo.config
-Requires: oslo.utils
 Requires: pbr
 Requires: python-mock
-Requires: reno
 Requires: requests
 Requires: requests-kerberos
-Requires: requests-mock
 Requires: six
 Requires: stevedore
 BuildRequires : buildreq-distutils3
 BuildRequires : pbr
 
 %description
-Team and repository tags
-        ========================
+This directory holds the betamax test cassettes that are pre-generated
+for unit testing. This can be removed in the future with a functional
+test that stands up a full devstack, records a cassette and then
+replays it as part of the test suite.
 
 %package license
 Summary: license components for the keystoneauth1 package.
@@ -72,7 +67,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1544223142
+export SOURCE_DATE_EPOCH=1551029056
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
