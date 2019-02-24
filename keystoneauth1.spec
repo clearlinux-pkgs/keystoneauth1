@@ -4,7 +4,7 @@
 #
 Name     : keystoneauth1
 Version  : 3.11.2
-Release  : 42
+Release  : 43
 URL      : https://files.pythonhosted.org/packages/f8/db/4ef4ce85a3136d193303f519d42af24f230b13d4e42ea449ceb274f8cd08/keystoneauth1-3.11.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/f8/db/4ef4ce85a3136d193303f519d42af24f230b13d4e42ea449ceb274f8cd08/keystoneauth1-3.11.2.tar.gz
 Summary  : Authentication Library for OpenStack Identity
@@ -67,7 +67,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1551029056
+export SOURCE_DATE_EPOCH=1551039238
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
