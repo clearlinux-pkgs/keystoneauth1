@@ -1,6 +1,15 @@
 CHANGES
 =======
 
+3.12.0
+------
+
+* Expose app creds and new attrs in fixtures
+* Remove shade jobs
+* Expose application credentials in AccessInfoV3
+* Use template for lower-constraints
+* Change openstack-dev to openstack-discuss
+
 3.11.2
 ------
 
