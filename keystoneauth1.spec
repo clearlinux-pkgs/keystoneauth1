@@ -4,7 +4,7 @@
 #
 Name     : keystoneauth1
 Version  : 3.14.0
-Release  : 48
+Release  : 49
 URL      : https://files.pythonhosted.org/packages/6b/46/7b169d73e6678e4fda81289538e1bce51cb914cbd2fa0326b78241815074/keystoneauth1-3.14.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/6b/46/7b169d73e6678e4fda81289538e1bce51cb914cbd2fa0326b78241815074/keystoneauth1-3.14.0.tar.gz
 Summary  : Authentication Library for OpenStack Identity
