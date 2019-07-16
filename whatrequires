@@ -1,2 +1,19 @@
 # This file contains recursive sources that require this package
+castellan
+cinder
+glance
+glance_store
+ironic
+keystonemiddleware
+neutron
+neutron-lib
+nova
+openstacksdk
+osc-lib
+python-keystoneclient
+python-mistralclient
+python-novaclient
+python-openstackclient
+python-saharaclient
 python-swiftclient
+python-troveclient
