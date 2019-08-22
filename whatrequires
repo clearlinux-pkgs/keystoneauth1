@@ -10,10 +10,12 @@ neutron-lib
 nova
 openstacksdk
 osc-lib
+python-designateclient
 python-keystoneclient
+python-magnumclient
 python-mistralclient
 python-novaclient
 python-openstackclient
 python-saharaclient
-python-swiftclient
 python-troveclient
+sahara
