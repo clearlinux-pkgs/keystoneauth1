@@ -3,6 +3,7 @@ castellan
 cinder
 glance
 glance_store
+horizon
 ironic
 keystonemiddleware
 neutron
@@ -10,7 +11,9 @@ neutron-lib
 nova
 openstacksdk
 osc-lib
+python-barbicanclient
 python-designateclient
+python-glanceclient
 python-keystoneclient
 python-magnumclient
 python-mistralclient
