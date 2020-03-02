@@ -4,7 +4,7 @@
 #
 Name     : keystoneauth1
 Version  : 3.18.0
-Release  : 56
+Release  : 57
 URL      : https://files.pythonhosted.org/packages/9e/36/afc5ff283a790784941c7f180398193b84694a1f5172c396cc69dc42c29e/keystoneauth1-3.18.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/9e/36/afc5ff283a790784941c7f180398193b84694a1f5172c396cc69dc42c29e/keystoneauth1-3.18.0.tar.gz
 Summary  : Authentication Library for OpenStack Identity
@@ -42,8 +42,39 @@ BuildRequires : util-linux
 ========================
 Team and repository tags
 ========================
+
 .. image:: https://governance.openstack.org/tc/badges/keystoneauth.svg
-:target: https://governance.openstack.org/tc/reference/tags/index.html
+    :target: https://governance.openstack.org/tc/reference/tags/index.html
+
+.. Change things from this point on
+
+============
+keystoneauth
+============
+
+.. image:: https://img.shields.io/pypi/v/keystoneauth1.svg
+    :target:https://pypi.org/project/keystoneauth1
+    :alt: Latest Version
+
+.. image:: https://img.shields.io/pypi/dm/keystoneauth1.svg
+    :target: https://pypi.org/project/keystoneauth1/
+    :alt: Downloads
+
+This package contains tools for authenticating to an OpenStack-based cloud.
+These tools include:
+
+* Authentication plugins (password, token, and federation based)
+* Discovery mechanisms to determine API version support
+* A session that is used to maintain client settings across requests (based on
+  the requests Python library)
+
+Further information:
+
+* Free software: Apache license
+* Documentation: https://docs.openstack.org/keystoneauth/latest/
+* Source: https://opendev.org/openstack/keystoneauth
+* Bugs: https://bugs.launchpad.net/keystoneauth
+* Release notes: https://docs.openstack.org/releasenotes/keystoneauth/
 
 %package license
 Summary: license components for the keystoneauth1 package.
@@ -66,6 +97,7 @@ python components for the keystoneauth1 package.
 Summary: python3 components for the keystoneauth1 package.
 Group: Default
 Requires: python3-core
+Provides: pypi(keystoneauth1)
 
 %description python3
 python3 components for the keystoneauth1 package.
@@ -73,13 +105,14 @@ python3 components for the keystoneauth1 package.
 
 %prep
 %setup -q -n keystoneauth1-3.18.0
+cd %{_builddir}/keystoneauth1-3.18.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1571797700
+export SOURCE_DATE_EPOCH=1583164633
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "

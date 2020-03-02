@@ -3,6 +3,8 @@ castellan
 cinder
 glance
 glance_store
+gnocchiclient
+heat
 horizon
 ironic
 keystonemiddleware
