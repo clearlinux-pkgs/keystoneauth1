@@ -1,5 +1,5 @@
 PKG_NAME := keystoneauth1
-URL = https://files.pythonhosted.org/packages/9e/36/afc5ff283a790784941c7f180398193b84694a1f5172c396cc69dc42c29e/keystoneauth1-3.18.0.tar.gz
+URL = https://files.pythonhosted.org/packages/ba/b4/f9d85343fb7b268048bba893c20b9eaddcfe57b230a8169505cbe48107e9/keystoneauth1-4.0.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
