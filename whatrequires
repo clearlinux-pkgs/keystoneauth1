@@ -3,7 +3,6 @@ castellan
 cinder
 glance_store
 gnocchiclient
-heat
 ironic
 keystonemiddleware
 neutron
